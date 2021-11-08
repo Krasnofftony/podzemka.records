@@ -33,6 +33,7 @@ ul {
 .lang-btn {
   background: var(--elements-extra);
   box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.14);
+  border-style: hidden;
   border-radius: 14px;
   font-size: 37px;
   line-height: 1.48;
