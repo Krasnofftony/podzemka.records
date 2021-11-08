@@ -80,6 +80,17 @@ ul {
   font-weight: 400;
 }
 
+.article-table {
+  font-size: 17px;
+  line-height: 1.47;
+  color: var(--brand-color);
+  background: var(--elements-extra);
+}
+
+.article-row {
+  background: #f3f3f3;
+}
+
 .footer {
   background: var(--brand-color);
   color: var(--elements-extra);
@@ -100,9 +111,12 @@ ul {
   color: var(--elements-extra);
 }
 
-.footer-item:active,
-.footer-item:hover,
 .header-item:active,
 .header-item:hover {
   text-shadow: 2px 2px 20px var(--elements-extra);
+}
+
+.footer-item:active,
+.footer-item:hover {
+  text-shadow: 1px 1px 5px var(--elements-extra);
 }
