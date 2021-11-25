@@ -10,26 +10,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="background">
 <header class="header">
     <div class="container">
         <nav>
             <ul class="header-menu">
                 <li class="headeritem-position"><a class="header-item" href="./studio.html">Services</a></li>
                 <li class="headeritem-position"><a class="header-item" href="./works.html">Works</a></li>
-                <li class="headeritem-position"> <a href="./index.html"> <img src="./images/logo.svg"
-                            alt="Podzemka records logo" width="350"></a></li>
+                <li class="headeritem-position"><a class="header-item" href="./index.html"> <img src="./images/logo.svg"
+                            alt="Podzemka records logo" width="315"></a></li>
                 <li class="headeritem-position"><a class="header-item" href="./about.html">About</a></li>
                 <li class="headeritem-position"><a class="header-item" href="./contacts.html">Contacts</a></li>
 
             </ul>
         </nav>
-
+        <button class="lang-btn" type="menu">
+            <div class="button-content"><img class="button-selector" src="./images/triangle.svg" alt="Language Selector"
+                    width="27">EN</div>
+        </button>
     </div>
 </header>
 <main>
     <h1 class="headline-hidden">Podzemka Records Services</h1>
-    <button class="lang-btn" type="menu"> <img src="./images/triangle.svg" alt="Language Triangle"> EN</button>
     <button type="button">&#60;</button>
     <button type="button">&#62;</button>
 
@@ -216,12 +218,22 @@
 
             <div>
                 <p class="copyright">Copyright &#169; Podzemka Records, 2021</p>
-                <ul class="footer-socialmedia">
-                    <li><a class="footer-item" href="https://www.facebook.com/podzemka.records"
-                            target="_blank">Facebook</a></li>
-                    <li><a class="footer-item" href="https://www.instagram.com/podzemka.records/"
-                            target="_blank">Instagram</a></li>
-                    <li><a class="footer-item" href="https://www.tiktok.com/@podzemka.records">TikTok</a></li>
+                <ul class="sm-list">
+                    <li class="sm-list-item"><a href="https://www.facebook.com/podzemka.records" target="_blank">
+                            <div class="social-media"><svg width="45" height="45" class="sm-icon">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg></div>
+                        </a></li>
+                    <li class="sm-list-item"><a href="https://www.instagram.com/podzemka.records/" target="_blank">
+                            <div class="social-media"><svg width="45" height="45" class="sm-icon">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg></div>
+                        </a></li>
+                    <li class="sm-list-item"><a href="https://www.tiktok.com/@podzemka.records" target="_blank">
+                            <div class="social-media"><svg width="45" height="45" class="sm-icon">
+                                    <use href="./images/icons.svg#tiktok"></use>
+                                </svg></div>
+                        </a></li>
                 </ul>
             </div>
         </div>

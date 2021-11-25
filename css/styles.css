@@ -29,6 +29,7 @@ p {
 }
 
 /*header*/
+
 .background {
   background-color: var(--elements-extra);
   background-image: linear-gradient(
@@ -183,7 +184,6 @@ p {
 }
 
 .footer {
-  height: auto;
   background: var(--brand-color);
   color: var(--elements-extra);
   font-weight: 200;
