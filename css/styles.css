@@ -266,14 +266,14 @@ p {
 
 .article-text {
   display: inline-block;
-  width: 625px;
-}
-
-.article-pic {
-  display: inline-block;
-  margin-left: 55px;
+  width: 750px;
+  margin-top: 10px;
 }
 
 .article-description {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-pic {
 }
