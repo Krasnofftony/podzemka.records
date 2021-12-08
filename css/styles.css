@@ -264,6 +264,28 @@ p {
   padding: 45px;
   margin-top: 75px;
   margin-bottom: 75px;
+  position: relative;
+}
+
+.arrow {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1;
+  left: -120px;
+  top: 40%;
+  position: absolute;
+}
+
+.arrow-reversed {
+  transform: rotate(180deg);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1;
+  right: -120px;
+  top: 40%;
+  position: absolute;
 }
 
 .article-text {
@@ -282,7 +304,7 @@ p {
   line-height: 1.47;
   color: var(--brand-color);
   background: var(--elements-extra);
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .service:nth-child(2n) {
@@ -299,14 +321,4 @@ p {
 .price {
   padding-right: 50px;
   border: none;
-}
-
-.arrow {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.reversed {
-  transform: rotate(180deg);
 }
