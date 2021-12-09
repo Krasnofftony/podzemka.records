@@ -304,7 +304,7 @@ p {
   line-height: 1.47;
   color: var(--brand-color);
   background: var(--elements-extra);
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .service:nth-child(2n) {
@@ -312,13 +312,20 @@ p {
 }
 
 .service {
-  padding-left: 50px;
   border: none;
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.price {
-  padding-right: 50px;
-  border: none;
+.service::before {
+  content: "";
+  display: flex;
+  flex-grow: 1;
+  border-bottom: var(--elements-color) 2px dotted;
+}
+
+.service-name {
+  order: -1;
 }
