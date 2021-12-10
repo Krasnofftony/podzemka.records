@@ -273,18 +273,19 @@ p {
   cursor: pointer;
   z-index: 1;
   left: -120px;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%);
   position: absolute;
 }
 
 .arrow-reversed {
-  transform: rotate(180deg);
   border: none;
   background: transparent;
   cursor: pointer;
   z-index: 1;
   right: -120px;
-  top: 40%;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
   position: absolute;
 }
 
