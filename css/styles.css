@@ -1,8 +1,8 @@
-:root {
+/* :root {
   --brand-color: #212d90;
   --elements-color: #2b3593;
   --elements-extra: #ffffff;
-}
+} */
 
 body {
   font-family: "Oswald", sans-serif;
@@ -44,7 +44,7 @@ p {
 }
 
 .container {
-  max-width: 1150px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -120,14 +120,14 @@ p {
   justify-content: center;
 }
 
-.headline {
+/* .headline {
   font-size: 125px;
   line-height: 1.2;
   color: var(--elements-color);
   font-weight: 400;
   display: flex;
   align-items: center;
-}
+} */
 
 .headline::after {
   content: "";
@@ -137,14 +137,14 @@ p {
   margin-right: 105px;
 }
 
-.headline-second {
+/* .headline-second {
   display: block;
   font-weight: 300;
   font-size: 74px;
   line-height: 1.15;
   color: black;
   min-width: 450px;
-}
+} */
 
 .headline-hidden {
   position: absolute;

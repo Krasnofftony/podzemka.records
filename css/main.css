@@ -1,0 +1,82 @@
+body {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.background {
+  background-color: var(--elements-extra);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../images/map.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  width: 100%;
+  height: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #212d90;
+  -webkit-filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.37));
+          filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.37));
+}
+
+.headline {
+  font-size: 46px;
+  line-height: 1.2;
+  color: #2b3593;
+  font-weight: 400;
+  text-align: center;
+}
+
+.headline-extra {
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 1.15;
+  color: black;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  height: 15%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #212d90;
+  -webkit-filter: drop-shadow(0px -4px 12px rgba(0, 0, 0, 0.37));
+          filter: drop-shadow(0px -4px 12px rgba(0, 0, 0, 0.37));
+}
+/*# sourceMappingURL=main.css.map */
