@@ -5,6 +5,7 @@
     color: $elements-color;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .headline-extra {
@@ -14,4 +15,11 @@
     line-height: 1.15;
     color: black;
     text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .list{
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
