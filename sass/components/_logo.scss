@@ -1,0 +1,14 @@
+.logo{
+    margin-top: 5px;
+    width: 185px;
+
+    @media screen and(min-width:768px) {
+        width: 300px;
+    }
+
+    &--tel{
+        @media screen and(min-width:768px) {
+            display: none;
+        }
+    }
+}

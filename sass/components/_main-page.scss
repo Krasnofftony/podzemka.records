@@ -1,25 +1,42 @@
+
 .headline {
     // font-size: 125px;
-    font-size: 46px;
+    font-size: 64px;
     line-height: 1.2;
     color: $elements-color;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+
+    @media screen and(min-width:768px) {
+      font-size: 103px;
+      margin-bottom: 100px;
+    }
   }
 
   .headline-extra {
     font-weight: 300;
-    font-size: 34px;
+    font-size: 36px;
     // font-size: 74px;
     line-height: 1.15;
     color: black;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+
+    @media screen and(min-width:768px) {
+      font-size: 73px;
+    }
+
   }
 
   .list{
+
     &:last-child{
       margin-bottom: 0;
     }
   }
+
+  .link{
+    color: black;
+  }
+
