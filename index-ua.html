@@ -1,109 +1,145 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студія Звукозапису Podzemka</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Студія Звукозапису Podzemka</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
 
-</head>
-<body class="background">
-    <header class="header">
-        <nav class="navigation">
+    <body class="background">
 
-            <ul class="header-menu">
-                <li class=""><a href="services.html" class="header-menu__link">послуги</a></li>
-                <li class=""><a href="works.html" class="header-menu__link">роботи</a></li>
-                <li><a href="index-ua.html"><img src="./images/podzemka_logo_tel-03.png" alt="Логотип Podzemka Records" class="logo"></a></li>
-                <li class=""><a href="about.html" class="header-menu__link">студія</a></li>
-                <li class=""><a href="contacts.html" class="header-menu__link">контакти</a></li>
-            </ul>
+        <header class="header">
 
-            <button type="button" class="button" data-language-open>
-                <img src="./images/flag-02.svg" alt="Українська мова" width="25">
-                <ul class="language-menu" data-language>
-                    <li class="language language__top"><a href="index-ua.html"><img src="./images/flag-02.svg" alt="Українська мова" width="25"></a></li>
-                    <li class="language"><a href="index.html"><img src="./images/flag-01.svg" alt="English language" width="25"></a></li>
-                    <li class="language language__bottom"><a href="index-ru.html"><img src="./images/flag-03.svg" alt="Русский язык" width="25"></a></li>
+            <div class="container">
+
+                <nav class="navigation">
+
+                    <ul class="header-menu">
+                        <li><a href="services.html" class="header-menu__link">послуги</a></li>
+                        <li><a href="works.html" class="header-menu__link">роботи</a></li>
+                        <li><a href="index-ua.html"><img src="./images/podzemka_logo_tel-03.png" alt="Логотип Podzemka Records" class="logo"></a></li>
+                        <li><a href="about.html" class="header-menu__link">студія</a></li>
+                        <li><a href="contacts.html" class="header-menu__link">контакти</a></li>
+                    </ul>
+
+                    <button type="button" class="button" data-language-open>
+
+                        <img src="./images/flag-02.svg" alt="Українська мова" width="25">
+
+                        <ul class="language-menu" data-language>
+                            <li class="language language__top"><a href="index-ua.html"><img src="./images/flag-02.svg" alt="Українська мова" width="25"></a></li>
+                            <li class="language"><a href="index.html"><img src="./images/flag-01.svg" alt="English language" width="25"></a></li>
+                            <li class="language language__bottom"><a href="index-ru.html"><img src="./images/flag-03.svg" alt="Русский язык" width="25"></a></li>
+                        </ul>
+
+                    </button>
+
+                    <a href="index-ua.html"><img src="./images/podzemka_logo_tel-03.png" alt="Логотип Podzemka Records" class="logo logo--tel"></a>
+
+                    <button type="button" class="button" data-menu-open>
+
+                        <svg width="25" class="menu">
+
+                            <use href="./images/icons.svg#menu" class="mobile-menu__icon-menu">
+                            </use>
+
+                            <use href="./images/icons.svg#close" class="mobile-menu__icon-close">
+                            </use>
+
+                        </svg>
+
+                    </button>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="mobile-menu" data-menu>
+
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">послуги</a></li>
+                    <li class="mobile-menu__item"><a href="works.html" class="mobile-menu__link">роботи</a></li>
+                    <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">студія</a></li>
+                    <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">контакти</a></li>
                 </ul>
-            </button>
 
-            <a href="index-ua.html"><img src="./images/podzemka_logo_tel-03.png" alt="Логотип Podzemka Records" class="logo logo--tel"></a>
+            </div>
 
-            <button type="button" class="button" data-menu-open>
-                <svg width="25" class="menu">
-                    <use href="./images/icons.svg#menu" class="mobile-menu__icon-menu">
-                    </use>
-                    <use href="./images/icons.svg#close" class="mobile-menu__icon-close">
-                    </use>
-                </svg>
-            </button>
-        </nav>
-    </header>
-    <main>
-        <div class="mobile-menu" data-menu>
-            <ul class="mobile-menu__list">
-                <li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">послуги</a></li>
-                <li class="mobile-menu__item"><a href="works.html" class="mobile-menu__link">роботи</a></li>
-                <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">студія</a></li>
-                <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link">контакти</a></li>
-            </ul>
-        </div>
-        <div class="container">
+            <div class="container">
 
-            <button type="button" class="button button--tab" data-language-tab-open>
-                <img src="./images/flag-02.svg" alt="Українська мова" width="40" class="flag">
-                <ul class="language-menu" data-language-tab>
-                    <li class="language language__top"><a href="index-ua.html"><img src="./images/flag-02.svg" alt="Українська мова" width="40"></a></li>
-                    <li class="language"><a href="index.html"><img src="./images/flag-01.svg" alt="English language" width="40"></a></li>
-                    <li class="language language__bottom"><a href="index-ru.html"><img src="./images/flag-03.svg" alt="Русский язык" width="40"></a></li>
+                <button type="button" class="button button--tab" data-language-tab-open>
+
+                    <img src="./images/flag-02.svg" alt="Українська мова" width="40" class="flag">
+
+                    <ul class="language-menu" data-language-tab>
+                        <li class="language language__top"><a href="index-ua.html"><img src="./images/flag-02.svg" alt="Українська мова" width="40"></a></li>
+                        <li class="language"><a href="index.html"><img src="./images/flag-01.svg" alt="English language" width="40"></a></li>
+                        <li class="language language__bottom"><a href="index-ru.html"><img src="./images/flag-03.svg" alt="Русский язык" width="40"></a></li>
+                    </ul>
+
+                </button>
+
+                <section class="main-page">
+
+                            <h1 class="headline">Podzemka<br>Records</h1>
+
+                                <ul class="list">
+                                    <li class="main-page__list">
+                                        <h2 class="headline-extra headline-extra--rus"><a href="services.html#studio" class="link">Студія Звукозапису</a></h2>
+                                    </li>
+                                    <li class="main-page__list">
+                                        <h2 class="headline-extra headline-extra--rus"><a href="services.html#rehearsal" class="link">Репетиційна База</a></h2>
+                                    </li>
+                                    <li class="main-page__list">
+                                        <h2 class="headline-extra headline-extra--rus"><a href="services.html#production" class="link">Аудіо Продакшен</a></h2>
+                                    </li>
+                                </ul>
+
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="container footer__container">
+
+                <ul class="footer__list">
+                    <li><a href="https://goo.gl/maps/csxKWaBR3FSGBYLp7" class="footer__link">Проспект Тичини 8, Київ</a> </li>
+                    <li><a href="mailto:podzemka.records@gmail.com" class="footer__link">podzemka.records@gmail.com</a> </li>
+                    <li><a href="tel:+380967220303" class="footer__link">+38 096 722 03 03</a></li>
                 </ul>
-            </button>
 
-            <section class="section">
+                <div class="footer-layout">
 
-                        <h1 class="headline">Podzemka<br>Records</h1>
-                            <ul class="list">
-                                <li>
-                                    <h2 class="headline-extra"><a href="services.html#studio" class="link">Студія Звукозапису</a></h2>
-                                </li>
-                                <li>
-                                    <h2 class="headline-extra"><a href="services.html#rehearsal" class="link">Репетиційна База</a></h2>
-                                </li>
-                                <li>
-                                    <h2 class="headline-extra"><a href="services.html#production" class="link">Аудіо Продакшен</a></h2>
-                                </li>
-                            </ul>
+                    <p class="footer__text">Copyright &#169;; Podzemka Records, 2022</p>
 
-            </section>
+                    <ul class="social-media">
+                        <li><a href= "https://www.instagram.com/podzemka.records/" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#instagram"></use></svg></div></a></li>
+                        <li><a href= "https://www.facebook.com/podzemka.records" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#facebook"></use></svg></div></a></li>
+                        <li><a href= "https://www.tiktok.com/@podzemka.records" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#tiktok"></use></svg></div></a></li>
+                    </ul>
+                </div>
 
-        </div>
+            </div>
 
-    </main>
+        </footer>
 
-    <footer class="footer">
-        <ul class="footer__list">
-            <li><a href="https://goo.gl/maps/csxKWaBR3FSGBYLp7" class="footer__link">Проспект Тичини 8, Київ</a> </li>
-            <li><a href="mailto:podzemka.records@gmail.com" class="footer__link">podzemka.records@gmail.com</a> </li>
-            <li><a href="tel:+380967220303" class="footer__link">+38 096 722 03 03</a></li>
-        </ul>
-        <div class="footer-layout">
-            <p class="footer__text">Copyright &#169;; Podzemka Records, 2022</p>
-            <ul class="social-media">
-                <li><a href= "https://www.instagram.com/podzemka.records/" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#instagram"></use></svg></div></a></li>
-                <li><a href= "https://www.facebook.com/podzemka.records" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#facebook"></use></svg></div></a></li>
-                <li><a href= "https://www.tiktok.com/@podzemka.records" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#tiktok"></use></svg></div></a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="./js/language-menu.js"></script>
-    <script src="./js/language-tablet.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+        <script src="./js/language-menu.js"></script>
+        <script src="./js/language-tablet.js"></script>
+        <script src="./js/mobile-menu.js"></script>
 
-</body>
+    </body>
+
 </html>

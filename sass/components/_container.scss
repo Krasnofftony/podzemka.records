@@ -6,5 +6,11 @@
     @media screen and(min-width:768px) {
       padding: 0 30px;
     }
+
+    @media screen and(min-width:1200px) {
+      width: 1120px;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 

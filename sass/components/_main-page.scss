@@ -1,6 +1,6 @@
 
 .headline {
-    // font-size: 125px;
+
     font-size: 64px;
     line-height: 1.2;
     color: $elements-color;
@@ -12,24 +12,49 @@
       font-size: 103px;
       margin-bottom: 100px;
     }
+
+    @media screen and(min-width:1200px) {
+          font-size: 125px;
+          text-align: left;
+          margin-bottom: 0;
+          padding-right: 70px;
+          border-right: 10px $brand-color solid;
+    }
+
+    &--rus{
+      @media screen and(min-width:1200px) {
+        padding-right: 55px;
+      }
+    }
+
   }
 
   .headline-extra {
     font-weight: 300;
     font-size: 36px;
-    // font-size: 74px;
     line-height: 1.15;
     color: black;
     text-align: center;
-    margin-bottom: 25px;
 
     @media screen and(min-width:768px) {
       font-size: 73px;
     }
 
+    @media screen and(min-width:1200px) {
+      text-align: left;
+    }
+
+    &--rus{
+      @media screen and(min-width:1200px) {
+        font-size: 65px;
+      }
+    }
+
   }
 
-  .list{
+
+  .main-page__list{
+    margin-bottom: 25px;
 
     &:last-child{
       margin-bottom: 0;

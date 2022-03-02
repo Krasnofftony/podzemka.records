@@ -1,6 +1,6 @@
 .mobile-menu{
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 200px);
     background: $brand-color;
     display: none;
     flex-direction: column;
@@ -65,7 +65,7 @@
     display: none;
 }
 
-.background.menu--open .section{
+.background.menu--open .main-page{
     display: none;
 }
 
