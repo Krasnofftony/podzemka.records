@@ -12,36 +12,106 @@
   .article {
     background: $elements-extra;
     padding: 40px 50px;
-    margin-top: 100px;
+    margin-top: 125px;
     margin-bottom: 175px;
     box-shadow: 0px 2px 19px 4px rgba(0, 0, 0, 0.19);
     font-size: 15px;
     line-height: 1.46;
+
+    @media screen and(min-width:768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and(min-width:1200px) {
+      position: relative;
+    }
   }
   
     .article-pic{
+        display: block;
         width: 100%;
         max-width: 241px;
+        max-height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and(min-width:1200px) {
+          position: absolute;
+          right: 50px;
+        }
     }
 
   .article-headline {
-    // font-size: 68px;
     font-size: 39px;
     line-height: 1.46;
     color: $elements-color;
     font-weight: 400;
-    text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
+
+    @media screen and(min-width:768px) {
+      font-size: 68px;
+      margin-top: 0;
+      margin-bottom: 45px;
+      order: -1;
+    }
+
+    @media screen and(min-width:1200px) {
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+
+  .article-text{
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    @media screen and(min-width:768px) {
+      margin-top: 45px;
+    }
+
+    @media screen and(min-width:1200px) {
+      max-width: calc(100% - 271px);
+      margin-top: 20px;
+    }
+
+    &--rus-production{
+
+      @media screen and(min-width:1200px) {
+        margin-top: 50px;
+      }
+    }
+
+    &--eng-production{
+
+      @media screen and(min-width:1200px) {
+        margin-top: 40px;
+      }
+    }
   }
 
   .article-servicelist {
-    font-size: 17px;
+    font-size: 12px;
     line-height: 1.47;
     color: $brand-color;
     background: $elements-extra;
-    // margin-top: 25px;
     margin-top: 15px;
+
+    @media screen and(min-width:366px) {
+      font-size: 17px;
+    }
+
+    @media screen and(min-width:768px) {
+      margin-top: 45px;
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-top: 20px;
+    }
   }
   
   .service:nth-child(2n) {
@@ -52,10 +122,19 @@
     border: none;
     display: flex;
     align-items: baseline;
-    // padding-left: 50px;
-    // padding-right: 50px;
+
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and(min-width:768px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media screen and(min-width:1200px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
   
   .service::before {
@@ -69,28 +148,83 @@
     order: -1;
   }
 
+  .arrow-wrapper{
+    position: relative;
+
+    @media screen and(min-width:768px) {
+      margin-top: 0;
+      order: -1;
+    }
+  }
+
   .arrow {
     border: none;
     background: transparent;
     cursor: pointer;
     padding: 0;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    z-index: 1;
+    top: 55%;
+    transform: translateY(-50%);
 
-    left: 25px;
-    top: 3%;
+    @media screen and(min-width:768px) {
+      top: calc(100% + 130px);
+      width: 95px;
+      height: 95px;
+    }
 
+    &--left{
+      left: -30px;
 
-    &--reversed{
-        transform: rotate(180deg);
-        left:calc(100% - 30px);
-        right: 25px;
+      @media screen and(min-width:376px) {
+        left: -40px;
+      }
+
+      @media screen and(min-width:480px) {
+        left: 0;
+      }
+
+      @media screen and(min-width:555px) {
+        left: 10%;
+      }
+
+      @media screen and(min-width:1200px) {
+        left: -140px;
+      }
 
     }
+
+    &--right{
+      right: -30px;
+
+      @media screen and(min-width:376px) {
+        right: -40px;
+      }
+
+      @media screen and(min-width:480px) {
+        right: 0;
+      }
+
+      @media screen and(min-width:555px) {
+        right: 10%;
+      }
+
+      @media screen and(min-width:1200px) {
+        right: -140px;
+      }
+
+    }
+
   }
 
   .switch-icon{
       width: 30px;
       height: 30px;
+
+      @media screen and(min-width:768px) {
+        width: 95px;
+        height: 95px;
+      }
   }
   

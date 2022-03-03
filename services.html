@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Podzemka Recording Studio</title>
+        <title>Services Podzemka Records Studio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
@@ -33,9 +33,9 @@
                     <img src="./images/flag-01.svg" alt="English language" width="25" class="flag">
 
                     <ul class="language-menu" data-language>
-                        <li class="language language__top"><a href="services.html"><img src="./images/flag-01.svg" alt="English language" width="25"></a></li>
-                        <li class="language"><a href="services-ua.html"><img src="./images/flag-02.svg" alt="Українська мова" width="25"></a></li>
-                        <li class="language language__bottom"><a href="services-ru.html"><img src="./images/flag-03.svg" alt="Русский язык" width="25"></a></li>
+                        <li><a href="services.html" class="language language__top"><img src="./images/flag-01.svg" alt="English language" width="25"></a></li>
+                        <li><a href="services-ua.html" class="language"><img src="./images/flag-02.svg" alt="Українська мова" width="25"></a></li>
+                        <li><a href="services-ru.html"  class="language language__bottom"><img src="./images/flag-03.svg" alt="Русский язык" width="25"></a></li>
                     </ul>
 
                 </button>
@@ -76,7 +76,7 @@
 
     </div>
 
-    <div class="container container-services">
+    <div class="container">
 
         <button type="button" class="button button--tab" data-language-tab-open>
 
@@ -84,9 +84,9 @@
 
             <ul class="language-menu" data-language-tab>
 
-                <li class="language language__top"><a href="services.html"><img src="./images/flag-01.svg" alt="English language" width="40"></a></li>
-                <li class="language"><a href="services-ua.html"><img src="./images/flag-02.svg" alt="Українська мова" width="40"></a></li>
-                <li class="language language__bottom"><a href="services-ru.html"><img src="./images/flag-03.svg" alt="Русский язык" width="40"></a></li>
+                <li><a href="services.html" class="language language__top"><img src="./images/flag-01.svg" alt="English language" width="40"></a></li>
+                <li><a href="services-ua.html" class="language"><img src="./images/flag-02.svg" alt="Українська мова" width="40"></a></li>
+                <li><a href="services-ru.html" class="language language__bottom"><img src="./images/flag-03.svg" alt="Русский язык" width="40"></a></li>
 
             </ul>
 
@@ -94,23 +94,27 @@
 
         <h1 class="headline-hidden">Podzemka Records Services</h1>
 
-        <button type="button" class="arrow">
-            <svg class="switch-icon">
-                <use href="./images/icons.svg#arrow"></use>
-            </svg>
-        </button>
-
-        <button type="button" class="arrow arrow--reversed">
-            <svg class="switch-icon">
-                <use href="./images/icons.svg#arrow"></use>
-            </svg>
-        </button>
-
         <article class="article" id="studio">
 
             <img src="./images/pic-studio.jpg" alt="Podzemka Recording Studio" class="article-pic">
-                    
-            <h2 class="article-headline">Recording Studio</h2>
+        
+            <div class="arrow-wrapper">
+            
+                <h2 class="article-headline">Recording Studio</h2>
+
+                <button type="button" class="arrow arrow--left">
+                    <svg class="switch-icon">
+                        <use href="./images/icons.svg#arrow-left"></use>
+                    </svg>
+                </button>
+
+                <button type="button" class="arrow arrow--right">
+                    <svg class="switch-icon">
+                        <use href="./images/icons.svg#arrow-right"></use>
+                    </svg>
+                </button>
+
+            </div>
                         
             <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Eleifend quam adipiscing vitae proin sagittis.
@@ -137,7 +141,23 @@
 
             <img src="./images/pic-studio.jpg" alt="Podzemka Rehearsal Space" class="article-pic">
 
-            <h2 class="article-headline">Rehearsal Space</h2>
+            <div class="arrow-wrapper">
+
+                <h2 class="article-headline">Rehearsal Space</h2>
+
+                <button type="button" class="arrow arrow--left">
+                    <svg class="switch-icon">
+                        <use href="./images/icons.svg#arrow-left"></use>
+                    </svg>
+                </button>
+
+                <button type="button" class="arrow arrow--right">
+                    <svg class="switch-icon">
+                        <use href="./images/icons.svg#arrow-right"></use>
+                    </svg>
+                </button>
+
+            </div>
 
             <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna
@@ -181,53 +201,60 @@
 
         <article class="article" id="production">
 
-            <img src="./images/pic-studio.jpg" alt="Podzemka Rehearsal Space" class="article-pic">
+            <img src="./images/pic-studio.jpg" alt="Podzemka Records Music Production" class="article-pic">
 
-            <h2 class="article-headline">Music Production</h2>
+            <div class="arrow-wrapper">
 
-            <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna
-                        aliqua. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Eleifend quam adipiscing vitae
-                        proin
-                        sagittis.
-                        Vitae proin sagittis nisl rhoncus mattis. Pellentesque adipiscing commodo elit at imperdiet dui. Habitant
-                        morbi
-                        tristique senectus et netus. Mi quis hendrerit dolor magna eget est lorem ipsum. Magna fringilla urna
-                        porttitor
-                        rhoncus
-                        dolor purus. Nunc aliquet bibendum enim facilisis gravida. Massa vitae tortor condimentum lacinia quis vel
-                        eros
-                        donec.
-                        Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Semper auctor
-                        neque vitae
-                        tempus quam. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. A arcu cursus vitae congue
-                        mauris
-                        rhoncus aenean vel elit. Nec feugiat nisl pretium fusce id velit ut.
+                <h2 class="article-headline">Music Production</h2>
+
+                <button type="button" class="arrow arrow--left">
+                    <svg class="switch-icon">
+                        <use href="./images/icons.svg#arrow-left"></use>
+                    </svg>
+                </button>
+
+                <button type="button" class="arrow arrow--right">
+                    <svg class="switch-icon">
+                        <use href="./images/icons.svg#arrow-right"></use>
+                    </svg>
+                </button>
+
+            </div>
+
+
+            <p class="article-text article-text--eng-production">Down in Podzemka we create/write/cowrite release ready songs regardless of how far they are from being ready. It really doesn’t matter if it’s only a scratch of a future chorus. Or just a simple melody consisting of “la-la-la” only. IT’S ENOUGH! It’s enough to create a full song that is no worse than a tune in your head but has the same quality as major hits on Apple Music and Spotify do. Yet, the most significant in working with us (as far as we are concerned) is that the work we deliver is made with passion and style ;)
             </p>
 
             <ul class="article-servicelist">
-                        <li class="service">
-                            <p class="service-name" title="service 1">Service 1</p>
-                            <p title="service 1">Price 1</p>
-                        </li>
-                        <li class="service">
-                            <p class="service-name" title="service 1">Service 2</p>
-                            <p title="service 1">Price 2</p>
-                        </li>
-                        <li class="service">
-                            <p class="service-name" title="service 1">Service 3</p>
-                            <p title="service 1">Price 3</p>
-                        </li>
-                        <li class="service">
-                            <p class="service-name" title="service 1">Service 4</p>
-                            <p title="service 1">Price 4</p>
-                        </li>
-                        <li class="service">
-                            <p class="service-name" title="service 1">Service 5</p>
-                            <p title="service 1">Price 5</p>
-                        </li>
-            </ul>
+                <li class="service">
+                    <p class="service-name" title="Arrangements: $100/song">Arrangements</p>
+                    <p title="Arrangements: $100/song">$100/song</p>
+                </li>
+                <li class="service">
+                    <p class="service-name" title="Mixing: $100/song">Mixing</p>
+                    <p title="Mixing: $100/song">$100song</p>
+                </li>
+                <li class="service">
+                    <p class="service-name" title="Mastering: $100/song">Mastering</p>
+                    <p title="Mastering: $100/song">$100/song</p>
+                </li>
+                <li class="service">
+                    <p class="service-name" title="Lyrics: $50/song">Lyrics</p>
+                    <p title="Lyrics: $50/song">$50/song</p>
+                </li>
+                <li class="service">
+                    <p class="service-name" title="Voice tuning: $50/track">Voice tuning</p>
+                    <p title="Voice tuning: $50/track">$50/track</p>
+                </li>
+                <li class="service">
+                    <p class="service-name" title="Songwriting: $350/master">Songwriting</p>
+                    <p title="Songwriting: $350/master">$350/master</p>
+                </li>
+                <li class="service">
+                    <p class="service-name" title="Track recording: UAH 500/hour">Track recording</p>
+                    <p title="Track recording: UAH 500/hour">UAH 500/hour</p>
+                </li>
+    </ul>
 
         </article>
 
