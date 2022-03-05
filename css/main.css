@@ -654,6 +654,16 @@ p {
   text-align: center;
 }
 
+.article-headline--rus {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 416px) {
+  .article-headline--rus {
+    font-size: 39px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .article-headline {
     font-size: 68px;
@@ -676,6 +686,23 @@ p {
 .article-text {
   margin-bottom: 15px;
   margin-top: 15px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 366px) {
+  .article-text {
+    font-size: 17px;
+  }
+}
+
+.article-text--extra {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 366px) {
+  .article-text--extra {
+    font-size: 17px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -703,6 +730,18 @@ p {
   }
 }
 
+.article-text__list {
+  font-size: 12px;
+  list-style: initial;
+  list-style-position: inside;
+}
+
+@media screen and (min-width: 366px) {
+  .article-text__list {
+    font-size: 17px;
+  }
+}
+
 .article-servicelist {
   font-size: 12px;
   line-height: 1.47;
@@ -714,12 +753,6 @@ p {
 @media screen and (min-width: 366px) {
   .article-servicelist {
     font-size: 17px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .article-servicelist {
-    margin-top: 45px;
   }
 }
 
@@ -810,8 +843,28 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .arrow {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .arrow {
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .arrow--rehearsal {
+    top: calc(100% + 200px);
+  }
+}
+
 .arrow--left {
-  left: -30px;
+  left: -40px;
 }
 
 @media screen and (min-width: 376px) {
@@ -828,18 +881,24 @@ p {
 
 @media screen and (min-width: 555px) {
   .arrow--left {
-    left: 10%;
+    left: 7%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .arrow--left {
-    left: -140px;
+    left: -115px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .arrow--left {
+    left: -160px;
   }
 }
 
 .arrow--right {
-  right: -30px;
+  right: -40px;
 }
 
 @media screen and (min-width: 376px) {
@@ -856,13 +915,19 @@ p {
 
 @media screen and (min-width: 555px) {
   .arrow--right {
-    right: 10%;
+    right: 7%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .arrow--right {
-    right: -140px;
+    right: -115px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .arrow--right {
+    right: -160px;
   }
 }
 
@@ -872,6 +937,20 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .switch-icon {
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .switch-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   .switch-icon {
     width: 95px;
     height: 95px;

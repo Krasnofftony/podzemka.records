@@ -51,6 +51,14 @@
     margin-bottom: 15px;
     text-align: center;
 
+    &--rus{
+      font-size: 25px;
+
+      @media screen and(min-width:416px) {
+        font-size: 39px;
+      }
+    }
+
     @media screen and(min-width:768px) {
       font-size: 68px;
       margin-top: 0;
@@ -69,6 +77,19 @@
 
     margin-bottom: 15px;
     margin-top: 15px;
+    font-size: 12px;
+
+    @media screen and(min-width:366px) {
+      font-size: 17px;
+    }
+
+    &--extra{
+      font-size: 12px;
+
+      @media screen and(min-width:366px) {
+        font-size: 17px;
+      }
+    }
 
     @media screen and(min-width:768px) {
       margin-top: 45px;
@@ -92,6 +113,16 @@
         margin-top: 40px;
       }
     }
+
+    &__list{
+      font-size: 12px;
+      list-style:initial;
+      list-style-position: inside;
+
+      @media screen and(min-width:366px) {
+        font-size: 17px;
+      }
+    }
   }
 
   .article-servicelist {
@@ -105,9 +136,9 @@
       font-size: 17px;
     }
 
-    @media screen and(min-width:768px) {
-      margin-top: 45px;
-    }
+    // @media screen and(min-width:768px) {
+    //   margin-top: 45px;
+    // }
 
     @media screen and(min-width:1200px) {
       margin-top: 20px;
@@ -174,8 +205,24 @@
       height: 95px;
     }
 
+    @media screen and(min-width:1200px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media screen and(min-width:1400px) {
+      width: 95px;
+      height: 95px;
+    }
+
+    &--rehearsal{
+      @media screen and(min-width:1200px) {
+        top: calc(100% + 200px);
+      }
+    }
+
     &--left{
-      left: -30px;
+      left: -40px;
 
       @media screen and(min-width:376px) {
         left: -40px;
@@ -186,17 +233,21 @@
       }
 
       @media screen and(min-width:555px) {
-        left: 10%;
+        left: 7%;
       }
 
       @media screen and(min-width:1200px) {
-        left: -140px;
+        left: -115px;
+      }
+
+      @media screen and(min-width:1400px) {
+        left: -160px;
       }
 
     }
 
     &--right{
-      right: -30px;
+      right: -40px;
 
       @media screen and(min-width:376px) {
         right: -40px;
@@ -207,11 +258,15 @@
       }
 
       @media screen and(min-width:555px) {
-        right: 10%;
+        right: 7%;
       }
 
       @media screen and(min-width:1200px) {
-        right: -140px;
+        right: -115px;
+      }
+
+      @media screen and(min-width:1400px) {
+        right: -160px;
       }
 
     }
@@ -223,6 +278,16 @@
       height: 30px;
 
       @media screen and(min-width:768px) {
+        width: 95px;
+        height: 95px;
+      }
+
+      @media screen and(min-width:1200px) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @media screen and(min-width:1400px) {
         width: 95px;
         height: 95px;
       }
