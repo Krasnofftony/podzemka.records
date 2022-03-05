@@ -845,6 +845,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .arrow {
+    top: calc(100% + 160px);
     width: 60px;
     height: 60px;
   }
