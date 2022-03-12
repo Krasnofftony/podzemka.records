@@ -35,7 +35,6 @@
         max-height: 250px;
         margin-left: auto;
         margin-right: auto;
-        // border: solid 5px $elements-color;
 
         @media screen and(min-width:1200px) {
           position: absolute;
@@ -226,7 +225,7 @@
         left: -40px;
       }
 
-      @media screen and(min-width:480px) {
+      @media screen and(min-width:513px) {
         left: 0;
       }
 
@@ -251,7 +250,7 @@
         right: -40px;
       }
 
-      @media screen and(min-width:480px) {
+      @media screen and(min-width:513px) {
         right: 0;
       }
 

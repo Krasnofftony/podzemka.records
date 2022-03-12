@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Портфолио Podzemka Records</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
+
+    <body class="background">
+
+        <header class="header">
+
+            <div class="container">
+
+                <nav class="navigation">
+
+                    <ul class="header-menu">
+                        <li><a href="services-ru.html" class="header-menu__link">услуги</a></li>
+                        <li><a href="works-ru.html" class="header-menu__link">работы</a></li>
+                        <li><a href="index-ru.html"><img src="./images/podzemka_logo_tel-03.png" alt="Логотип Podzemka Records" class="logo"></a></li>
+                        <li><a href="about-ru.html" class="header-menu__link">студия</a></li>
+                        <li><a href="contacts-ru.html" class="header-menu__link">контакты</a></li>
+                    </ul>
+
+
+                    <button type="button" class="button" data-language-open>
+
+                        <img src="./images/flag-03.svg" alt="Русский язык" width="25" class="flag">
+
+                        <ul class="language-menu" data-language>
+                            <li><a href="works-ru.html" class="language language__top"><img src="./images/flag-03.svg" alt="Русский язык" width="25"></a></li>
+                            <li><a href="works.html" class="language"><img src="./images/flag-01.svg" alt="English language" width="25"></a></li>
+                            <li><a href="works-ua.html" class="language language__bottom"><img src="./images/flag-02.svg" alt="Українська мова" width="25"></a></li>
+                        </ul>
+
+                    </button>
+
+                    <a href="index-ru.html"><img src="./images/podzemka_logo_tel-03.png" alt="Логотип Podzemka" class="logo logo--tel"></a>
+                    
+                    <button type="button" class="button" data-menu-open>
+
+                        <svg width="25" class="menu">
+
+                            <use href="./images/icons.svg#menu" class="mobile-menu__icon-menu">
+                            </use>
+
+                            <use href="./images/icons.svg#close" class="mobile-menu__icon-close">
+                            </use>
+
+                        </svg>
+
+                    </button>
+
+                </nav>
+
+            </div>
+
+        </header>
+
+    
+    <main>
+
+        <div class="mobile-menu" data-menu>
+
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="services-ru.html" class="mobile-menu__link">услуги</a></li>
+                <li class="mobile-menu__item"><a href="works-ru.html" class="mobile-menu__link">работы</a></li>
+                <li class="mobile-menu__item"><a href="about-ru.html" class="mobile-menu__link">студия</a></li>
+                <li class="mobile-menu__item"><a href="contacts-ru.html" class="mobile-menu__link">контакты</a></li>
+            </ul>
+
+        </div>
+        
+            <div class="container works">
+
+                <button type="button" class="button button--tab" data-language-tab-open>
+
+                    <img src="./images/flag-03.svg" alt="Русский язык" width="40" class="flag">
+
+                    <ul class="language-menu" data-language-tab>
+                        <li><a href="works-ru.html" class="language language__top"><img src="./images/flag-03.svg" alt="Русский язык" width="40"></a></li>
+                        <li><a href="works.html" class="language"><img src="./images/flag-01.svg" alt="English language" width="40"></a></li>
+                        <li><a href="works-ua.html" class="language language__bottom"><img src="./images/flag-02.svg" alt="Українська мова" width="40"></a></li>
+                    </ul>
+
+                </button>
+
+                <h1 class="headline-hidden">Портфолио Podzemka Records</h1>
+
+                <ul class="filter-list">
+                        <li><button type="button" class="filter">Жанр</button></li>
+                        <li><button type="button" class="filter">Услуга</button></li>
+                        <li><button type="button" class="filter">Год</button></li>
+                </ul>
+
+                <ul class="song-list">
+
+                        <li class="song-list__item">
+
+                                <div class="song-info">
+
+                                    <img src="./images/Pale_Boy_Tony.jpg" alt="Обложка Pale boy Tony - Новий Хіт" class="song-info__pic" srcset="./images/Pale_Boy_Tony.jpg 1x, ./images/Pale_Boy_Tony_2x.jpg 2x, ./images/Pale_Boy_Tony_3x.jpg 3x">
+
+                                    <h2><a href="" class="song-info__title">Новий Хіт</a></h2>
+                                    
+                                    <p class="song-info__extra">Pale boy Tony - Рок - 2021</p>
+
+                                    <p class="song-info__services">Слова / Музыка / Запись / Аранжировка / Сведение / Мастеринг</p>
+
+                                    <audio src="./audio/PbT.mp3" controls class="song-info__audio"></audio> 
+
+                                </div>
+                                
+                        </li>
+
+                        <li class="song-list__item">
+
+                            <div class="song-info">
+
+                                <img src="./images/Margo.jpg" alt="Обложка Margo Bloom - No Regrets" class="song-info__pic" srcset="./images/Margo.jpg 1x, ./images/Margo_2x.jpg 2x, ./images/Margo_3x.jpg 3x">
+
+                                <h2><a href="" class="song-info__title">No Regrets</a></h2>
+                                
+                                <p class="song-info__extra">Margo Bloom - Инди - 2021</p>
+
+                                <p class="song-info__services"> Запись / Аранжировка / Сведение / Мастеринг</p>
+
+                                <audio src="./audio/margo.mp3" controls class="song-info__audio"></audio> 
+
+                            </div>
+                            
+                        </li>
+
+                        <li class="song-list__item">
+
+                            <div class="song-info">
+
+                                <img src="./images/Meshea.jpg" alt="Промо Meshea - Les Bleus" class="song-info__pic" srcset="./images/Meshea.jpg 1x, ./images/Meshea_2x.jpg 2x, ./images/Meshea_3x.jpg 3x">
+
+                                <h2><a href="" class="song-info__title">Les Bleus</a></h2>
+                                
+                                <p class="song-info__extra">Meshea - French - 2021</p>
+
+                                <p class="song-info__services"> Запись / Сведение / Мастеринг</p>
+
+                                <audio src="./audio/meshea.mp3" controls class="song-info__audio"></audio> 
+
+                            </div>
+                            
+                        </li>
+
+                        <li class="song-list__item song-list--last-four">
+
+                            <div class="song-info">
+
+                                <img src="./images/Krasnov.jpg" alt="Обложка Anton Krasnov - Державний Гімн України" class="song-info__pic" srcset="./images/Krasnov.jpg 1x, ./images/Krasnov_2x.jpg 2x, ./images/Krasnov_3x.jpg 3x">
+
+                                <h2><a href="" class="song-info__title">Державний Гімн України</a></h2>
+                                
+                                <p class="song-info__extra">Anton Krasnov - Рок - 2020</p>
+
+                                <p class="song-info__services">Музыка / Запись / Аранжировка / Сведение</p>
+
+                                <audio src="./audio/Krasnov.mp3" controls class="song-info__audio"></audio> 
+
+                            </div>
+                            
+                        </li>
+
+                </ul>
+
+                
+
+                <button type="button" class="works__arrow works__arrow--left">
+                            <svg class="switch-icon">
+                                <use href="./images/icons.svg#arrow-left"></use>
+                            </svg>
+                </button>
+        
+                <button type="button" class="works__arrow works__arrow--right">
+                            <svg class="switch-icon">
+                                <use href="./images/icons.svg#arrow-right"></use>
+                            </svg>
+                </button>
+
+            </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer__container">
+
+            <ul class="footer__list">
+                <li><a href="https://goo.gl/maps/csxKWaBR3FSGBYLp7" class="footer__link">Проспект Тычыны 8, Киев</a> </li>
+                <li><a href="mailto:podzemka.records@gmail.com" class="footer__link">podzemka.records@gmail.com</a> </li>
+                <li><a href="tel:+380967220303" class="footer__link">+38 096 722 03 03</a></li>
+            </ul>
+
+            <div class="footer-layout">
+
+                <p class="footer__text">Copyright &#169;; Podzemka Records, 2022</p>
+
+                <ul class="social-media">
+                    <li><a href= "https://www.instagram.com/podzemka.records/" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#instagram"></use></svg></div></a></li>
+                    <li><a href= "https://www.facebook.com/podzemka.records" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#facebook"></use></svg></div></a></li>
+                    <li><a href= "https://www.tiktok.com/@podzemka.records" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#tiktok"></use></svg></div></a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/language-menu.js"></script>
+    <script src="./js/language-tablet.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+
+    </body>
+
+    </html>
