@@ -273,6 +273,7 @@ p {
     height: 50px;
     padding: 10px;
     margin-top: 50px;
+    z-index: 1;
   }
 }
 
@@ -1147,6 +1148,7 @@ p {
     display: block;
     background-color: transparent;
     border: none;
+    cursor: pointer;
     position: absolute;
     top: 60px;
   }
