@@ -1,121 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Podzemka Records</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Podzemka Records</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-        <link rel="stylesheet" href="./css/styles.css">
-
-</head>
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
 
 
 <body class="background">
 
 
-<header class="header">
-    <div class="container">
-        <nav>
-            <ul class="header-menu">
-                <li class="headeritem-position"><a class="header-item" href="./studio.html">Services</a></li>
-                <li class="headeritem-position"><a class="header-item" href="./works.html">Works</a></li>
-                <li class="headeritem-position"><a class="header-item" href="./index.html"> <img src="./images/logo.svg"
-                            alt="Podzemka records logo" width="315"></a></li>
-                <li class="headeritem-position"><a class="header-item" href="./about.html">About</a></li>
-                <li class="headeritem-position"><a class="header-item" href="./contacts.html">Contacts</a></li>
+    <header class="header">
 
-            </ul>
-        </nav>
-        <button class="lang-btn" type="menu">
-            <div class="button-content"><img class="button-selector" src="./images/triangle.svg" alt="Language Selector"
-                    width="27">EN</div>
-        </button>
-    </div>
-</header>
+        <div class="container">
+
+            <nav class="navigation">
+
+                <ul class="header-menu">
+                    <li><a href="services.html" class="header-menu__link">services</a></li>
+                    <li><a href="works.html" class="header-menu__link">works</a></li>
+                    <li><a href="index.html"><img src="./images/podzemka_logo_tel-03.png" alt="Logo Podzemka Records" class="logo"></a></li>
+                    <li><a href="about.html" class="header-menu__link">about</a></li>
+                    <li><a href="contacts.html" class="header-menu__link">contacts</a></li>
+                </ul>
+
+                <button type="button" class="button" data-language-open>
+
+                    <img src="./images/flag-01.svg" alt="English language" width="25" class="flag">
+
+                    <ul class="language-menu" data-language>
+                        <li><a href="about.html" class="language language__top"><img src="./images/flag-01.svg" alt="English language" width="25"></a></li>
+                        <li><a href="about-ua.html" class="language"><img src="./images/flag-02.svg" alt="Українська мова" width="25"></a></li>
+                        <li><a href="about-ru.html"  class="language language__bottom"><img src="./images/flag-03.svg" alt="Русский язык" width="25"></a></li>
+                    </ul>
+
+                </button>
+
+                <a href="index.html"><img src="./images/podzemka_logo_tel-03.png" alt="Logo Podzemka Records" class="logo logo--tel"></a>
+            
+                <button type="button" class="button" data-menu-open>
+
+                    <svg width="25" class="menu">
+
+                        <use href="./images/icons.svg#menu" class="mobile-menu__icon-menu">
+                        </use>
+
+                        <use href="./images/icons.svg#close" class="mobile-menu__icon-close">
+                        </use>
+
+                    </svg>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
 
 
     <main>
-        <h1>About Podzemka Records</h1>
-        <img src="./images/about" alt="About Podzemka Records">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Corporis, at? Accusantium soluta, officiis et repellendus
-        laborum error magni amet provident ullam sunt maiores possimus illo,
-        necessitatibus ipsam consequatur officia? Nam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Corporis, at? Accusantium soluta, officiis et repellendus
-        laborum error magni amet provident ullam sunt maiores possimus illo,
-        necessitatibus ipsam consequatur officia? Nam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Corporis, at? Accusantium soluta, officiis et repellendus
-        laborum error magni amet provident ullam sunt maiores possimus illo,
-        necessitatibus ipsam consequatur officia? Nam.</p>
-        <ul>
-            <li><img src="" alt=""> <h2> Anton Krasnov | Producer </h2> 
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, at? Accusantium soluta, officiis et repellendus
-                laborum error magni amet provident ullam sunt maiores possimus illo,
-                necessitatibus ipsam consequatur officia? Nam.</p>
-            </li>
-            <li><img src="" alt="">
-                <h2> Alexander Ilukha | Position </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+        <div class="mobile-menu" data-menu>
+
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">services</a></li>
+                <li class="mobile-menu__item"><a href="works.html" class="mobile-menu__link">works</a></li>
+                <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">about</a></li>
+                <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__link mobile-menu__link--last-item">contacts</a></li>
+            </ul>
+    
+        </div>
+
+        <div class="container about">
+
+            <div class="layout-about">
+
+                <button type="button" class="button button--tab" data-language-tab-open>
+
+                    <img src="./images/flag-01.svg" alt="English language" width="40" class="flag">
+        
+                    <ul class="language-menu" data-language-tab>
+        
+                        <li><a href="about.html" class="language language__top"><img src="./images/flag-01.svg" alt="English language" width="40"></a></li>
+                        <li><a href="about-ua.html" class="language"><img src="./images/flag-02.svg" alt="Українська мова" width="40"></a></li>
+                        <li><a href="about-ru.html" class="language language__bottom"><img src="./images/flag-03.svg" alt="Русский язык" width="40"></a></li>
+        
+                    </ul>
+        
+                </button>
+
+                <h1 class="about-headline">Podzemka is...</h1>
+
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Eleifend quam adipiscing vitae proin sagittis. Vitae proin sagittis nisl rhoncus mattis. Pellentesque adipiscing commodo elit at imperdiet dui. Habitant morbi tristique senectus et netus. Mi quis hendrerit dolor magna eget est lorem ipsum. Magna fringilla urna porttitor rhoncus dolor purus. Nunc aliquet bibendum enim facilisis gravida. Massa vitae tortor condimentum lacinia quis vel eros donec.</p> 
+                <p class="about__text about__text--lower">Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Semper auctor neque vitae tempus quam. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. A arcu cursus vitae congue mauris rhoncus aenean vel elit. Nec feugiat nisl pretium fusce id velit ut.</p>
+
+                <div class="team">
+
+                    <h2 class="team__headline">Team:</h2>
+
+                    <ul class="team__list">
+
+                        <li class="team__list-item team__list-item--top"><button class="team__name">Anton Krasnov | Producer</button></li>
+                        <li class="team__list-item team__list-item--middle"><button class="team__name">Georgii Kovalenko | Producer</button></li>
+                        <li class="team__list-item team__list-item--bottom"><button class="team__name">Anton Saenko | Engineer</button></li>
+                    </ul>
+
+                </div>
+
+
+
+            <!-- <ul>
+                <li><img src="" alt=""> <h2> Anton Krasnov | Producer </h2> 
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Corporis, at? Accusantium soluta, officiis et repellendus
                     laborum error magni amet provident ullam sunt maiores possimus illo,
                     necessitatibus ipsam consequatur officia? Nam.</p>
-            </li>
-            <li><img src="" alt="">
-                <h2> Dimitry Chas | Arranger </h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis, at? Accusantium soluta, officiis et repellendus
-                    laborum error magni amet provident ullam sunt maiores possimus illo,
-                    necessitatibus ipsam consequatur officia? Nam.</p>
-            </li>
-        </ul>
+                </li>
+                <li><img src="" alt="">
+                    <h2> Alexander Ilukha | Position </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Corporis, at? Accusantium soluta, officiis et repellendus
+                        laborum error magni amet provident ullam sunt maiores possimus illo,
+                        necessitatibus ipsam consequatur officia? Nam.</p>
+                </li>
+                <li><img src="" alt="">
+                    <h2> Dimitry Chas | Arranger </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Corporis, at? Accusantium soluta, officiis et repellendus
+                        laborum error magni amet provident ullam sunt maiores possimus illo,
+                        necessitatibus ipsam consequatur officia? Nam.</p>
+                </li>
+            </ul> -->
+
+                <img src="./images/guitar.jpg" alt="Guitar Podzemka Records" class="image-about" srcset="./images/guitar.jpg 1x, ./images/guitar_2x.jpg 2x, ./images/guitar_3x.jpg 3x">
+
+            </div>
+
+        </div>
+
     </main>
 
-<footer class="footer">
-    <div class="container">
-        <div class="position">
-            <div>
-                <address>
-                    <ul>
-                        <li><a class="footer-item" href="https://goo.gl/maps/csxKWaBR3FSGBYLp7" target="_blank">8 Pavla
-                                Tychyny Ave. Kyiv</a></li>
-                        <li><a class="footer-item"
-                                href="mailto:podzemka.records@gmail.com">podzemka.records@gmail.com</a></li>
-                        <li><a class="footer-item" href="tel:+380967220303">+380967220303</a></li>
-                    </ul>
-                </address>
+    <footer class="footer">
+
+        <div class="container footer__container">
+
+                <ul class="footer__list">
+                    <li><a href="https://goo.gl/maps/csxKWaBR3FSGBYLp7" class="footer__link">8 Pavla Tychyny Ave. Kyiv</a> </li>
+                    <li><a href="mailto:podzemka.records@gmail.com" class="footer__link">podzemka.records@gmail.com</a> </li>
+                    <li><a href="tel:+380967220303" class="footer__link">+38 096 722 03 03</a></li>
+                </ul>
+
+            <div class="footer-layout">
+
+                <p class="footer__text">Copyright &#169;; Podzemka Records, 2022</p>
+
+                <ul class="social-media">
+                    <li><a href= "https://www.instagram.com/podzemka.records/" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#instagram"></use></svg></div></a></li>
+                    <li><a href= "https://www.facebook.com/podzemka.records" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#facebook"></use></svg></div></a></li>
+                    <li><a href= "https://www.tiktok.com/@podzemka.records" target="_blank"><div class="social-media__page"><svg width="45" height="45" class="sm-icon"><use href="./images/icons.svg#tiktok"></use></svg></div></a></li>
+                </ul>
+
             </div>
 
-            <div>
-                <p class="copyright">Copyright &#169; Podzemka Records, 2021</p>
-                <ul class="sm-list">
-                    <li class="sm-list-item"><a href="https://www.facebook.com/podzemka.records" target="_blank">
-                            <div class="social-media"><svg width="45" height="45" class="sm-icon">
-                                    <use href="./images/icons.svg#facebook"></use>
-                                </svg></div>
-                        </a></li>
-                    <li class="sm-list-item"><a href="https://www.instagram.com/podzemka.records/" target="_blank">
-                            <div class="social-media"><svg width="45" height="45" class="sm-icon">
-                                    <use href="./images/icons.svg#instagram"></use>
-                                </svg></div>
-                        </a></li>
-                    <li class="sm-list-item"><a href="https://www.tiktok.com/@podzemka.records" target="_blank">
-                            <div class="social-media"><svg width="45" height="45" class="sm-icon">
-                                    <use href="./images/icons.svg#tiktok"></use>
-                                </svg></div>
-                        </a></li>
-                </ul>
-            </div>
         </div>
-    </div>
-</footer>
+
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/language-menu.js"></script>
+    <script src="./js/language-tablet.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
+
 </html>
