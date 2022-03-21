@@ -5,10 +5,39 @@
        margin-top: 0;
    }
 
+   &-text--tel{
+       display: block;
+
+       @media screen and(min-width:768px) {
+           display: none;
+       }
+   }
+
+   &-text--tab{
+       display: none;
+
+       @media screen and(min-width:768px) {
+           display: block;
+       }
+
+       @media screen and(min-width:1200px) {
+        display: none;
+    }
+
+   }
+
+   &-text--desk{
+       display: none;
+
+       @media screen and(min-width:1200px) {
+           display: block;
+       }
+   }
+
 }
 
 .layout-about{
-    max-width: 740px;
+    max-width: 727px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -91,6 +120,8 @@
 
     &__name--cyrillic{
         
+        font-size: 14px;
+
         @media screen and(min-width:370px) {
             font-size: 18px;
         }
@@ -145,10 +176,6 @@
 
     &--lower{
         width: 100%;
-
-        @media screen and(min-width:1200px) {
-            width: calc(100% - 380px);
-        }
     }
 
 }
