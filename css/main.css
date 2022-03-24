@@ -1495,4 +1495,14 @@ p {
     font-size: 24px;
   }
 }
+
+.team-card__bio {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 380px) {
+  .team-card__bio {
+    font-size: 15px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
