@@ -48,8 +48,8 @@ p {
 
 .background {
   background-color: var(--elements-extra);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../images/map.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/map.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url("../images/map.webp");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/map.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -162,7 +162,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }
 
@@ -519,7 +519,7 @@ p {
 .footer__text {
   color: #ffffff;
   font-weight: 200;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.5;
   font-style: normal;
   display: block;
@@ -535,7 +535,7 @@ p {
 .footer__link {
   color: #ffffff;
   font-weight: 200;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.5;
   font-style: normal;
   -webkit-transition-property: text-shadow;
@@ -1716,13 +1716,26 @@ p {
   .contacts__text {
     margin-left: 0;
     margin-right: 0;
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts__text {
     font-size: 15px;
+    margin-bottom: -55px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__text--eng {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__text--rus {
+    margin-bottom: -35px;
   }
 }
 
@@ -1814,7 +1827,7 @@ p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
 }
 

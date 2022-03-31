@@ -159,11 +159,24 @@
     @media screen and(min-width:768px) {
         margin-left: 0;
         margin-right: 0;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     @media screen and(min-width:1200px) {
         font-size: 15px;
+        margin-bottom: -55px;
+    }
+
+    &--eng{
+        @media screen and(min-width:1200px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &--rus{
+        @media screen and(min-width:1200px) {
+            margin-bottom: -40px;
+        }
     }
 }
 
@@ -229,7 +242,7 @@
 
     @media screen and(min-width:1200px) {
         align-items: flex-end;
-        margin-bottom: 50px;
+        margin-bottom: 90px;
     }
 
 }
