@@ -1,6 +1,12 @@
 .song-list{
 
-    margin-bottom: 125px;
+    margin-bottom: 40px;
+
+    @media screen and(min-width:1200px) {
+        margin-bottom: 125px;
+    }
+
+
 
     &__item{
         margin: 35px 0 0 0;

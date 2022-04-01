@@ -208,7 +208,7 @@ p {
   border-top: 1px solid black;
 }
 
-.lng-btn {
+.language-container {
   position: relative;
   z-index: 3;
 }
@@ -223,6 +223,10 @@ p {
           box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.14);
   position: absolute;
   top: 0;
+}
+
+.language-menu--mob {
+  top: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -391,6 +395,7 @@ p {
 .mobile-menu {
   width: 100vw;
   height: calc(100vh - 200px);
+  min-height: 500px;
   background: #212d90;
   display: none;
   -webkit-box-orient: vertical;
@@ -987,7 +992,13 @@ p {
 }
 
 .song-list {
-  margin-bottom: 125px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .song-list {
+    margin-bottom: 125px;
+  }
 }
 
 .song-list__item {
