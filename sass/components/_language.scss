@@ -32,6 +32,17 @@
 .language-container{
     position: relative;
     z-index: 3;
+
+    &--works-page{
+        
+        @media screen and(min-width:768px) {
+            margin-top: 50px;
+        }
+
+        @media screen and(min-width:1200px) {
+            display: inline-block;
+        }
+    }
 }
 
 // РЕШЕНИЕ ПРОБЛЕМЫ ВАЛИДАТОРА С ЯЗЫКОВОЙ КНОПКОЙ
