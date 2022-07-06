@@ -257,10 +257,6 @@ p {
   display: block;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
 }
@@ -275,47 +271,117 @@ p {
           align-items: flex-start;
 }
 
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
 .slider {
   position: relative;
 }
 
 .slider .slick-arrow {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 125px;
   z-index: 10;
   font-size: 0;
 }
 
+@media screen and (min-width: 375px) {
+  .slider .slick-arrow {
+    top: 295px;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .slider .slick-arrow {
+    top: 390px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider .slick-arrow {
+    top: 310px;
+  }
+}
+
 .slider .slick-arrow.slick-arrow.slick-prev {
-  left: -130px;
+  left: 40px;
   background: url(../images/arrow-left.png) center center no-repeat;
-  background-size: 95px;
-  width: 95px;
-  height: 95px;
+  background-size: 35px;
+  width: 35px;
+  height: 35px;
   border: none;
 }
 
+@media screen and (min-width: 375px) {
+  .slider .slick-arrow.slick-arrow.slick-prev {
+    left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider .slick-arrow.slick-arrow.slick-prev {
+    left: 100px;
+    background-size: 95px;
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider .slick-arrow.slick-arrow.slick-prev {
+    background-size: 65px;
+    width: 65px;
+    height: 65px;
+    left: -50px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .slider .slick-arrow.slick-arrow.slick-prev {
+    left: -110px;
+    background-size: 95px;
+    width: 95px;
+    height: 95px;
+  }
+}
+
 .slider .slick-arrow.slick-arrow.slick-next {
-  right: -130px;
+  right: 40px;
   background: url(../images/arrow-right.png) center center no-repeat;
-  background-size: 95px;
-  width: 95px;
-  height: 95px;
+  background-size: 35px;
+  width: 35px;
+  height: 35px;
   border: none;
+}
+
+@media screen and (min-width: 375px) {
+  .slider .slick-arrow.slick-arrow.slick-next {
+    right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slider .slick-arrow.slick-arrow.slick-next {
+    right: 100px;
+    background-size: 95px;
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider .slick-arrow.slick-arrow.slick-next {
+    background-size: 65px;
+    width: 65px;
+    height: 65px;
+    right: -50px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .slider .slick-arrow.slick-arrow.slick-next {
+    right: -110px;
+    background-size: 95px;
+    width: 95px;
+    height: 95px;
+  }
 }
 
 .slider .slick-arrow.slick-disabled {
@@ -559,6 +625,10 @@ p {
   display: none;
 }
 
+.background.menu--open .slider {
+  display: none;
+}
+
 .background.menu--open .arrow {
   display: none;
 }
@@ -726,6 +796,7 @@ p {
           box-shadow: 0px 2px 19px 4px rgba(0, 0, 0, 0.19);
   font-size: 15px;
   line-height: 1.46;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -749,12 +820,24 @@ p {
 }
 
 .article-pic {
-  display: block;
-  width: 100%;
-  max-width: 241px;
-  max-height: 250px;
-  margin-left: auto;
-  margin-right: auto;
+  display: none;
+}
+
+@media screen and (min-width: 375px) {
+  .article-pic {
+    display: block;
+    width: 152px;
+    height: 157px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 430px) {
+  .article-pic {
+    width: 241px;
+    height: 250px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -765,13 +848,22 @@ p {
 }
 
 .article-headline {
-  font-size: 39px;
+  margin-top: 0;
+  font-size: 25px;
   line-height: 1.46;
   color: #2b3593;
   font-weight: 400;
-  margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 375px) {
+  .article-headline {
+    margin-top: 15px;
+  }
 }
 
 .article-headline--rus {
@@ -784,8 +876,16 @@ p {
   }
 }
 
+@media screen and (min-width: 430px) {
+  .article-headline {
+    width: 250px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .article-headline {
+    display: inline-block;
+    width: auto;
     font-size: 68px;
     margin-top: 0;
     margin-bottom: 45px;
@@ -800,6 +900,7 @@ p {
     display: inline-block;
     text-align: left;
     margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -870,7 +971,7 @@ p {
   margin-top: 15px;
 }
 
-@media screen and (min-width: 366px) {
+@media screen and (min-width: 480px) {
   .article-servicelist {
     font-size: 17px;
   }
@@ -927,155 +1028,6 @@ p {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
-}
-
-.arrow-wrapper {
-  position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .arrow-wrapper {
-    margin-top: 0;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-}
-
-.arrow {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 55%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-@media screen and (min-width: 768px) {
-  .arrow {
-    top: calc(100% + 130px);
-    width: 95px;
-    height: 95px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .arrow {
-    top: calc(100% + 160px);
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .arrow {
-    width: 95px;
-    height: 95px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .arrow--rehearsal {
-    top: calc(100% + 200px);
-  }
-}
-
-.arrow--left {
-  left: -40px;
-}
-
-@media screen and (min-width: 376px) {
-  .arrow--left {
-    left: -40px;
-  }
-}
-
-@media screen and (min-width: 513px) {
-  .arrow--left {
-    left: 0;
-  }
-}
-
-@media screen and (min-width: 555px) {
-  .arrow--left {
-    left: 7%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .arrow--left {
-    left: -115px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .arrow--left {
-    left: -160px;
-  }
-}
-
-.arrow--right {
-  right: -40px;
-}
-
-@media screen and (min-width: 376px) {
-  .arrow--right {
-    right: -40px;
-  }
-}
-
-@media screen and (min-width: 513px) {
-  .arrow--right {
-    right: 0;
-  }
-}
-
-@media screen and (min-width: 555px) {
-  .arrow--right {
-    right: 7%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .arrow--right {
-    right: -115px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .arrow--right {
-    right: -160px;
-  }
-}
-
-.switch-icon {
-  width: 30px;
-  height: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .switch-icon {
-    width: 95px;
-    height: 95px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .switch-icon {
-    width: 60px;
-    height: 60px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .switch-icon {
-    width: 95px;
-    height: 95px;
-  }
 }
 
 .song-list {

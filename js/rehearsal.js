@@ -6,5 +6,6 @@ $(document).ready(function(){
         speed:1000,
         initialSlide:1,
         infinite:false,
+        // appendArrows:$('.arrow-wrapper'),
     });
 });

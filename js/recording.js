@@ -5,5 +5,7 @@ $(document).ready(function(){
         adaptiveHeight:true,
         speed:1000,
         infinite:false,
+        // appendArrows:$('.arrow-wrapper'),
     });
+
 });

@@ -1,10 +1,4 @@
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
+
 .slick-list {
     overflow: hidden;
 }
@@ -13,31 +7,6 @@
     display: flex;
     align-items: flex-start;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
 
 .slider{
     position: relative;
@@ -45,29 +14,101 @@
 
 .slider .slick-arrow{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 125px;
     z-index: 10;
     font-size: 0;
+
+    @media screen and(min-width:375px) {
+        top:295px;
+    }
+
+    @media screen and(min-width:430px) {
+        top:390px;
+    }
+
+    @media screen and(min-width:768px) {
+        top:310px;
+    }
+
+
+    // top: 370px;
+    // top: 50%;
+    // transform: translateY(-50%);
+
 }
 
 .slider .slick-arrow.slick-arrow.slick-prev{
-    left: -130px;
+
+    left: 40px;
     background: url(../images/arrow-left.png) center center no-repeat;
-    background-size: 95px;
-    width: 95px;
-    height: 95px;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
     border: none;
+
+    @media screen and(min-width:375px) {
+        left:50px;
+    }
+
+        @media screen and(min-width:768px) {
+        left: 100px;
+        background-size: 95px;
+        width: 95px;
+        height: 95px;
+    }
+
+    @media screen and(min-width:1200px) {
+        background-size: 65px;
+        width: 65px;
+        height: 65px;
+        left: -50px;
+    }
+
+    @media screen and(min-width:1400px) {
+        left: -110px;
+        background-size: 95px;
+        width: 95px;
+        height: 95px;
+        }
 
 }
 
 .slider .slick-arrow.slick-arrow.slick-next{
-    right: -130px;
+
+    right: 40px;
     background: url(../images/arrow-right.png) center center no-repeat;
+    background-size: 35px;
+    width: 35px;
+    height: 35px;
+    border: none;
+
+    @media screen and(min-width:375px) {
+        right: 50px;
+    }
+
+
+    @media screen and(min-width:768px) {
+        right: 100px;
+        background-size: 95px;
+        width: 95px;
+        height: 95px;
+    }
+
+    @media screen and(min-width:1200px) {
+        background-size: 65px;
+        width: 65px;
+        height: 65px;
+        right: -50px;
+    }
+
+
+    @media screen and(min-width:1400px) {
+    right: -110px;
     background-size: 95px;
     width: 95px;
     height: 95px;
-    border: none;
+    }
+
 }
 
 .slider .slick-arrow.slick-disabled{
