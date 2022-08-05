@@ -45,7 +45,6 @@ p {
 
 .works {
   position: relative;
-  height: 100vh;
 }
 
 .background {
@@ -1093,10 +1092,76 @@ p {
 
 .portfolio {
   margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .portfolio__portfolio-item {
   margin-bottom: 15px;
+}
+
+.filter-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  background-color: #212d90;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.filter-container__top {
+  margin-top: 80px;
+}
+
+.filter-container--label {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.filter-container--list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.filter-container--button {
+  display: block;
+  background-color: #ffffff;
+  border: none;
+  color: #2b3593;
+  width: 100%;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.filter-container--button:hover, .filter-container--button:focus {
+  font-weight: 500;
+  background-color: #f3f3f3;
+}
+
+.filter-container--button__left {
+  border-right: 1px solid #212d90;
+  border-radius: 0px 0px 0px 9px;
+}
+
+.filter-container--button__right {
+  border-left: 1px solid #212d90;
+  border-radius: 0px 0px 9px 0px;
+}
+
+.filter-container--button__middle {
+  border-right: 1px solid #212d90;
 }
 
 .about {
