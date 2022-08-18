@@ -8,6 +8,10 @@
     }
 }
 
+// .portfolio .mix{
+//     display: none;
+// }
+
 .container-wrapper{
     display: block;
 
@@ -85,16 +89,21 @@
         cursor: pointer;
         padding-top: 15px;
         padding-bottom: 15px;
-        transition-property: background-color, color;
+        transition-property: background-color color font-weight;
         transition-duration: 150ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     }
 
-    &--button:hover, &--button:focus{
-        font-weight: 500;
-        background-color: #f3f3f3;
-    }
+        @media screen and (min-width:1200px) {
+
+            .filter-container--button:hover{
+                font-weight: 500;
+                background-color: #f3f3f3;
+                color: $elements-color;
+            }
+
+        }
 
     &--button__left{
         border-right: 1px solid $brand-color;
@@ -120,3 +129,10 @@
     }
 
 }
+
+.mixitup-control-active{
+    background-color: #dd2626;
+    color: $elements-extra;
+    font-weight: 500;
+}
+

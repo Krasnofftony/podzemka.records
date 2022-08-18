@@ -103,23 +103,19 @@
                     </div>
     
                     <h1 class="headline-hidden">Портфолио Podzemka Records</h1>
-    
-                    <!-- <ul class="filter-list">
-                            <li><button type="button" class="filter" aria-label="фильтр отображения работ по жанру">Жанр</button></li>
-                            <li><button type="button" class="filter" aria-label="фильтр отображения работ по предоставленной услуге">Услуга</button></li>
-                            <li><button type="button" class="filter" aria-label="фильтр отображения работ по году выпуска">Год</button></li>
-                    </ul> -->
 
                     <div class="container-wrapper">
 
                         <div class="filter-container filter-container__genre">
+
                             <p class="filter-container--label">Жанр:</p>
 
                             <div class="filter-container--list">
-                                <button class="filter-container--button filter-container--button__left">Рок</button>
-                                <button class="filter-container--button">Поп</button>
-                                <button class="filter-container--button filter-container--button__right">Хип-Хоп</button>
+                                <button class="filter-container--button filter-container--button__left" type="button" data-toggle=".rock">Рок</button>
+                                <button class="filter-container--button" type="button" data-toggle=".pop">Поп</button>
+                                <button class="filter-container--button filter-container--button__right" type="button" data-toggle=".hiphop">Хип-Хоп</button>
                             </div>
+
                         </div>
 
                         <div class="filter-container filter-container__service">
@@ -127,10 +123,10 @@
                             <p class="filter-container--label">Услуга:</p>
 
                             <div class="filter-container--list">
-                                <button class="filter-container--button filter-container--button__left">Запись</button>
-                                <button class="filter-container--button filter-container--button__middle">Аранжировка</button>
-                                <button class="filter-container--button">Сведение</button>
-                                <button class="filter-container--button filter-container--button__right">Мастеринг</button>
+                                <button class="filter-container--button filter-container--button__left" type="button" data-toggle=".record">Запись</button>
+                                <button class="filter-container--button filter-container--button__middle" type="button" data-toggle=".arrange">Аранжировка</button>
+                                <button class="filter-container--button" type="button" data-toggle=".mixing">Сведение</button>
+                                <button class="filter-container--button filter-container--button__right" type="button" data-toggle=".master">Мастеринг</button>
 
                             </div>
 
@@ -138,11 +134,11 @@
 
                     </div>
         
-                    <ul class="portfolio">
-                            <li class="portfolio__portfolio-item"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1305767401&color=%23dd2627&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/podzemka-records" title="Podzemka Records" target="_blank" style="color: #cccccc; text-decoration: none;">Podzemka Records</a> · <a href="https://soundcloud.com/podzemka-records/break-the-silence" title="Break The Silence by Anton Krasnov" target="_blank" style="color: #cccccc; text-decoration: none;">Break The Silence by Anton Krasnov</a></div></li>
-                            <li class="portfolio__portfolio-item"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1104645976%3Fsecret_token%3Ds-o9TfB44SOky&color=%23212d90&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/paleboytony" title="Pale boy Tony" target="_blank" style="color: #cccccc; text-decoration: none;">Pale boy Tony</a> · <a href="https://soundcloud.com/paleboytony/novii-kht-demo/s-o9TfB44SOky" title="Новий Хіт" target="_blank" style="color: #cccccc; text-decoration: none;">Новий Хіт</a></div></li>
-                            <li class="portfolio__portfolio-item"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/866585182&color=%23212d90&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/krasnoffnotdead" title="Anton Krasnov" target="_blank" style="color: #cccccc; text-decoration: none;">Anton Krasnov</a> · <a href="https://soundcloud.com/krasnoffnotdead/break-the-silence" title="Break The Silence" target="_blank" style="color: #cccccc; text-decoration: none;">Break The Silence</a></div></li>
-                    </ul>
+                    <div class="portfolio">
+                            <div class="mix pop arrange portfolio__portfolio-item"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1326306358&color=%23dd2626&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/podzemka-records" title="Podzemka Records" target="_blank" style="color: #cccccc; text-decoration: none;">Podzemka Records</a> · <a href="https://soundcloud.com/podzemka-records/break-the-silence-by-anton-krasnov-post-pre-production" title="Break The Silence by Anton Krasnov (Post- / Pre- Production)" target="_blank" style="color: #cccccc; text-decoration: none;">Break The Silence by Anton Krasnov (Post- / Pre- Production)</a></div></div>
+                            <div class="mix rock arrange record portfolio__portfolio-item"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1104645976%3Fsecret_token%3Ds-o9TfB44SOky&color=%23212d90&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/paleboytony" title="Pale boy Tony" target="_blank" style="color: #cccccc; text-decoration: none;">Pale boy Tony</a> · <a href="https://soundcloud.com/paleboytony/novii-kht-demo/s-o9TfB44SOky" title="Новий Хіт" target="_blank" style="color: #cccccc; text-decoration: none;">Новий Хіт</a></div></div>
+                            <div class="mix rock master portfolio__portfolio-item"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/866585182&color=%23212d90&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/krasnoffnotdead" title="Anton Krasnov" target="_blank" style="color: #cccccc; text-decoration: none;">Anton Krasnov</a> · <a href="https://soundcloud.com/krasnoffnotdead/break-the-silence" title="Break The Silence" target="_blank" style="color: #cccccc; text-decoration: none;">Break The Silence</a></div></div>
+                    </div>
 
                 </div>
 
@@ -180,6 +176,8 @@
     <script src="./js/language-menu.js"></script>
     <script src="./js/language-tablet.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mixitup.min.js"></script>
+    <script src="./js/filters.js"></script>
 
     </body>
 

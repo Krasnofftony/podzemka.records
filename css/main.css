@@ -45,6 +45,7 @@ p {
 
 .works {
   position: relative;
+  min-height: 100vh;
 }
 
 .background {
@@ -1126,17 +1127,20 @@ p {
   cursor: pointer;
   padding-top: 15px;
   padding-bottom: 15px;
-  -webkit-transition-property: background-color, color;
-  transition-property: background-color, color;
+  -webkit-transition-property: background-color color font-weight;
+  transition-property: background-color color font-weight;
   -webkit-transition-duration: 150ms;
           transition-duration: 150ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-container--button:hover, .filter-container--button:focus {
-  font-weight: 500;
-  background-color: #f3f3f3;
+@media screen and (min-width: 1200px) {
+  .filter-container .filter-container--button:hover {
+    font-weight: 500;
+    background-color: #f3f3f3;
+    color: #2b3593;
+  }
 }
 
 .filter-container--button__left {
@@ -1163,6 +1167,12 @@ p {
 
 .filter-container--button__middle {
   border-right: 1px solid #212d90;
+}
+
+.mixitup-control-active {
+  background-color: #dd2626;
+  color: #ffffff;
+  font-weight: 500;
 }
 
 .about {
