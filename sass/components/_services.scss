@@ -56,7 +56,7 @@
 
   .article-headline {
     margin-top: 0;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.46;
     color: $elements-color;
     font-weight: 400;
@@ -70,16 +70,12 @@
       margin-top: 15px;
     }
 
-    &--rus{
-      font-size: 25px;
-
-      @media screen and(min-width:416px) {
-        font-size: 39px;
-      }
-    }
-
     @media screen and(min-width:430px) {
       width: 250px;
+    }
+
+    @media screen and(min-width:600px) {
+      font-size: 25px;
     }
 
     @media screen and(min-width:768px) {

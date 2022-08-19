@@ -279,20 +279,26 @@ p {
 
 .slider .slick-arrow {
   position: absolute;
-  top: 125px;
+  top: 130px;
   z-index: 10;
   font-size: 0;
 }
 
+@media screen and (min-width: 345px) {
+  .slider .slick-arrow {
+    top: 120px;
+  }
+}
+
 @media screen and (min-width: 375px) {
   .slider .slick-arrow {
-    top: 295px;
+    top: 290px;
   }
 }
 
 @media screen and (min-width: 430px) {
   .slider .slick-arrow {
-    top: 390px;
+    top: 385px;
   }
 }
 
@@ -851,7 +857,7 @@ p {
 
 .article-headline {
   margin-top: 0;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.46;
   color: #2b3593;
   font-weight: 400;
@@ -868,19 +874,15 @@ p {
   }
 }
 
-.article-headline--rus {
-  font-size: 25px;
-}
-
-@media screen and (min-width: 416px) {
-  .article-headline--rus {
-    font-size: 39px;
-  }
-}
-
 @media screen and (min-width: 430px) {
   .article-headline {
     width: 250px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .article-headline {
+    font-size: 25px;
   }
 }
 
