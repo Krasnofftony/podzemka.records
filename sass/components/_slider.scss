@@ -14,105 +14,89 @@
 
 .slider .slick-arrow{
     position: absolute;
-    // top: 125px;
-    top: 130px;
+    top: 135px;
     z-index: 10;
     font-size: 0;
     cursor: pointer;
 
-    @media screen and(min-width:345px) {
-        top: 120px;
-    }
-
     @media screen and(min-width:375px) {
-        top: 290px;
+        top: 305px;
     }
 
     @media screen and(min-width:430px) {
-        top:385px;
+        top:383px;
+    }
+
+    @media screen and(min-width:600px) {
+        top:392px;
     }
 
     @media screen and(min-width:768px) {
-        top:310px;
+        top:300px;
     }
 
-
-    // top: 370px;
-    // top: 50%;
-    // transform: translateY(-50%);
+    @media screen and(min-width:1200px) {
+        top:85px;
+    }
 
 }
 
 .slider .slick-arrow.slick-arrow.slick-prev{
 
-    left: 40px;
+    left: calc(50% - 95px);
     background: url(../images/arrow-left.png) center center no-repeat;
     background-size: 35px;
     width: 35px;
     height: 35px;
     border: none;
 
-    @media screen and(min-width:375px) {
-        left:50px;
+    @media screen and(min-width:430px) {
+        left: calc(50% - 125px);
     }
 
-        @media screen and(min-width:768px) {
-        left: 100px;
+    @media screen and(min-width:600px) {
+        left: calc(50% - 135px);
+    }
+
+    @media screen and(min-width:768px) {
+        left: calc(50% - 240px);
         background-size: 95px;
         width: 95px;
         height: 95px;
     }
 
     @media screen and(min-width:1200px) {
-        background-size: 65px;
-        width: 65px;
-        height: 65px;
-        left: -50px;
+        left: calc(50% - 380px);
     }
-
-    @media screen and(min-width:1400px) {
-        left: -110px;
-        background-size: 95px;
-        width: 95px;
-        height: 95px;
-        }
 
 }
 
 .slider .slick-arrow.slick-arrow.slick-next{
 
-    right: 40px;
+    right: calc(50% - 95px);
     background: url(../images/arrow-right.png) center center no-repeat;
     background-size: 35px;
     width: 35px;
     height: 35px;
     border: none;
 
-    @media screen and(min-width:375px) {
-        right: 50px;
+    @media screen and(min-width:430px) {
+        right: calc(50% - 125px);
     }
 
+    @media screen and(min-width:600px) {
+        right: calc(50% - 135px);
+    }
 
     @media screen and(min-width:768px) {
-        right: 100px;
+        right: calc(50% - 240px);
         background-size: 95px;
         width: 95px;
         height: 95px;
     }
 
     @media screen and(min-width:1200px) {
-        background-size: 65px;
-        width: 65px;
-        height: 65px;
-        right: -50px;
-    }
-
-
-    @media screen and(min-width:1400px) {
-    right: -110px;
-    background-size: 95px;
-    width: 95px;
-    height: 95px;
+        right: calc(50% - 380px);
     }
 
 }
