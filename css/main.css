@@ -500,14 +500,14 @@ p {
     font-size: 125px;
     text-align: left;
     margin-bottom: 0;
-    padding-right: 70px;
+    padding-right: 90px;
     border-right: 10px #212d90 solid;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .headline--rus {
-    padding-right: 55px;
+    padding-right: 75px;
   }
 }
 
