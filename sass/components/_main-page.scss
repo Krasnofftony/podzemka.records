@@ -46,6 +46,12 @@
 
     &--rus{
       @media screen and(min-width:1200px) {
+        font-size: 55px;
+      }
+    }
+
+    &--ua{
+      @media screen and(min-width:1200px) {
         font-size: 65px;
       }
     }
