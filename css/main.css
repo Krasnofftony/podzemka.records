@@ -979,13 +979,43 @@ p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border-bottom: #2b3593 2px dotted;
+  border-bottom: #2b3593 1px dotted;
+}
+@media screen and (min-width: 768px) {
+  .service::before {
+    border-bottom: #2b3593 2px dotted;
+  }
 }
 
 .service-name {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+}
+
+.price-button {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 15px;
+  margin-top: 15px;
+  color: #ffffff;
+  background-color: #2b3593;
+  text-align: center;
+}
+@media screen and (min-width: 375px) {
+  .price-button {
+    display: none;
+  }
+}
+
+.pricelist {
+  display: none;
+}
+@media screen and (min-width: 375px) {
+  .pricelist {
+    display: block;
+  }
 }
 
 .portfolio {
