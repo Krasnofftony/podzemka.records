@@ -32,7 +32,7 @@
     }
 
     @media screen and(min-width:768px) {
-        top:300px;
+        top:280px;
     }
 
     @media screen and(min-width:1200px) {
@@ -51,11 +51,11 @@
     border: none;
 
     @media screen and(min-width:430px) {
-        left: calc(50% - 125px);
+        left: calc(50% - 145px);
     }
 
     @media screen and(min-width:600px) {
-        left: calc(50% - 135px);
+        left: calc(50% - 170px);
     }
 
     @media screen and(min-width:768px) {
@@ -66,7 +66,7 @@
     }
 
     @media screen and(min-width:1200px) {
-        left: calc(50% - 380px);
+        left: calc(50% - 430px);
     }
 
 }
@@ -81,11 +81,11 @@
     border: none;
 
     @media screen and(min-width:430px) {
-        right: calc(50% - 125px);
+        right: calc(50% - 145px);
     }
 
     @media screen and(min-width:600px) {
-        right: calc(50% - 135px);
+        right: calc(50% - 170px);
     }
 
     @media screen and(min-width:768px) {
@@ -96,7 +96,7 @@
     }
 
     @media screen and(min-width:1200px) {
-        right: calc(50% - 380px);
+        right: calc(50% - 430px);
     }
 
 }
