@@ -270,3 +270,11 @@
 
     }
 }
+
+.article-text--button{
+    color: $elements-color;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
