@@ -1715,4 +1715,8 @@ p {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.article-text--terms {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
