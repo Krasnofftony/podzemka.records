@@ -679,7 +679,26 @@ p {
 @media screen and (min-width: 768px) {
   .footer__link--terms {
     display: block;
+    position: relative;
+    left: 15px;
+    text-align: center;
   }
+}
+@media screen and (min-width: 1200px) {
+  .footer__link--terms {
+    left: 30px;
+  }
+}
+.footer__link--terms-ua {
+  width: 70px;
+}
+.footer__link--terms-en {
+  width: 45px;
+  left: 25px;
+}
+.footer__link--terms-ru {
+  left: 10px;
+  width: 70px;
 }
 
 .footer-layout {

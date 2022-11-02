@@ -65,6 +65,27 @@
 
         @media screen and(min-width:768px) {
             display: block;
+            position: relative;
+            left: 15px;
+            text-align: center;
+        }
+
+        @media screen and(min-width:1200px) {
+            left: 30px;
+        }
+
+        &-ua{
+            width: 70px;
+        }
+
+        &-en{
+            width: 45px;
+            left: 25px;
+        }
+
+        &-ru{
+            left: 10px;
+            width: 70px;
         }
     }
 }
