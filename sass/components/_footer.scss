@@ -15,7 +15,7 @@
 
     &__container{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
     }
 }
@@ -57,6 +57,15 @@
 
     &:hover, &:focus{
         text-shadow: 0 0 5px $elements-extra;
+    }
+
+    &--terms{
+
+        display: none;
+
+        @media screen and(min-width:768px) {
+            display: block;
+        }
     }
 }
 
